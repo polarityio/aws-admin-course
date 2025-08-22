@@ -6,14 +6,14 @@
 
 ---
 
-## Agenda: 1-Hour Technical Overview
+## Course Outline
 
-### [1. Introduction & Architectural Goals](./01_Introduction_and_Architecture.md) (5 minutes)
+### [1. Introduction & Architectural Goals](./01_Introduction_and_Architecture.md)
 *   **Objective:** Outline the target architecture for a highly available system.
 *   **Key Concepts:** Fault tolerance, redundancy, scalability, and security.
 *   **Diagram:** Present a clear architectural diagram showing the end-state: a multi-instance application behind a load balancer, with assets served by a CDN, all within a secure, isolated network.
 
-### [2. Secure Network Foundation: VPC Configuration](./02_VPC_Configuration.md) (15 minutes)
+### [2. Secure Network Foundation: VPC Configuration](./02_VPC_Configuration.md)
 *   **Title:** "VPC Administration: Isolating Your Resources"
 *   **Objective:** To create a logically isolated network environment and control inbound/outbound traffic.
 *   **Administrative Tasks:**
@@ -22,7 +22,7 @@
     *   **Routing:** Configuring Route Tables, an Internet Gateway for public traffic, and a NAT Gateway for private instances to access the internet.
     *   **Security Layers:** Differentiating between stateless Network ACLs (subnet level) and stateful Security Groups (instance level).
 
-### [3. Virtual Servers: EC2 Instance Management](./03_EC2_Instance_Management.md) (15 minutes)
+### [3. Virtual Servers: EC2 Instance Management](./03_EC2_Instance_Management.md)
 *   **Title:** "EC2 Administration: Deploying & Securing Compute"
 *   **Objective:** To deploy, secure, and manage the virtual servers that run the application.
 *   **Administrative Tasks:**
@@ -32,7 +32,7 @@
     *   **Key Pair Management:** Creating and managing SSH keys for secure administrative access.
     *   **Bootstrapping:** Using "User Data" scripts to automate initial server configuration on launch.
 
-### [4. IAM for Resource Access: Granting Permissions with Roles](./04_IAM_for_Resource_Access.md) (10 minutes)
+### [4. IAM for Resource Access: Granting Permissions with Roles](./04_IAM_for_Resource_Access.md)
 *   **Title:** "IAM for Resource Access: Granting Permissions with Roles"
 *   **Objective:** To understand and implement the secure way for AWS resources to interact with each other.
 *   **Administrative Tasks:**
@@ -40,7 +40,7 @@
     *   Creating IAM Roles for the EC2 service.
     *   Attaching Roles to EC2 instances via an Instance Profile.
 
-### [5. Data Backup and Recovery](./05_Backup_and_Recovery.md) (10 minutes)
+### [5. Data Backup and Recovery](./05_Backup_and_Recovery.md)
 *   **Title:** "Data Backup and Recovery"
 *   **Objective:** To understand and implement backup and recovery procedures for EC2 instances.
 *   **Administrative Tasks:**
@@ -48,7 +48,7 @@
     *   Restoring an EBS Volume from a snapshot.
     *   Automating backups with Amazon Data Lifecycle Manager.
 
-### [6. Scalable Object Storage: S3 Bucket Administration](./06_S3_Bucket_Administration.md) (5 minutes)
+### [6. Scalable Object Storage: S3 Bucket Administration](./06_S3_Bucket_Administration.md)
 *   **Title:** "S3 Administration: Managing Application Assets"
 *   **Objective:** To configure durable, scalable, and secure storage for application assets, logs, and backups.
 *   **Administrative Tasks:**
@@ -56,7 +56,7 @@
     *   **Access Control:** Managing Block Public Access settings and introduction to bucket policies.
     *   **Storage Classes:** Understanding the use cases for different storage tiers (e.g., S3 Standard vs. Glacier).
 
-### [7. Traffic Management: Elastic Load Balancing & CloudFront](./07_Traffic_Management.md) (10 minutes)
+### [7. Traffic Management: Elastic Load Balancing & CloudFront](./07_Traffic_Management.md)
 *   **Title:** "Traffic & Content Delivery Administration"
 *   **Objective:** To distribute traffic for scalability and reliability, and to accelerate content delivery.
 *   **Administrative Tasks (ELB):**
@@ -67,14 +67,14 @@
     *   **Origins:** Configuring origins, such as an S3 bucket for static assets or a load balancer for dynamic content.
     *   **Cache Policies:** Understanding cache behavior and Time-To-Live (TTL) settings.
 
-### [8. DNS Management with Route 53](./08_DNS_Management_with_Route53.md) (10 minutes)
+### [8. DNS Management with Route 53](./08_DNS_Management_with_Route53.md)
 *   **Title:** "DNS Management with Route 53"
 *   **Objective:** To point a custom domain name to the application using Route 53.
 *   **Administrative Tasks:**
     *   Creating a Public Hosted Zone.
     *   Creating an Alias record to point to a CloudFront distribution or Load Balancer.
 
-### [9. Summary & Next Steps](./09_Summary_and_Next_Steps.md) (10 minutes)
+### [9. Summary & Next Steps](./09_Summary_and_Next_Steps.md)
 *   **Title:** "Operationalizing Your AWS Environment"
 *   **Review:** Briefly recap how the services connect to achieve high availability.
 *   **Next Steps:** Introduce subsequent topics for deeper dives:
