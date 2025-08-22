@@ -40,7 +40,15 @@
     *   Creating IAM Roles for the EC2 service.
     *   Attaching Roles to EC2 instances via an Instance Profile.
 
-### [5. Scalable Object Storage: S3 Bucket Administration](./05_S3_Bucket_Administration.md) (5 minutes)
+### [5. Data Backup and Recovery](./05_Backup_and_Recovery.md) (10 minutes)
+*   **Title:** "Data Backup and Recovery"
+*   **Objective:** To understand and implement backup and recovery procedures for EC2 instances.
+*   **Administrative Tasks:**
+    *   Creating manual EBS Snapshots.
+    *   Restoring an EBS Volume from a snapshot.
+    *   Automating backups with Amazon Data Lifecycle Manager.
+
+### [6. Scalable Object Storage: S3 Bucket Administration](./06_S3_Bucket_Administration.md) (5 minutes)
 *   **Title:** "S3 Administration: Managing Application Assets"
 *   **Objective:** To configure durable, scalable, and secure storage for application assets, logs, and backups.
 *   **Administrative Tasks:**
@@ -48,7 +56,7 @@
     *   **Access Control:** Managing Block Public Access settings and introduction to bucket policies.
     *   **Storage Classes:** Understanding the use cases for different storage tiers (e.g., S3 Standard vs. Glacier).
 
-### [6. Traffic Management: Elastic Load Balancing & CloudFront](./06_Traffic_Management.md) (10 minutes)
+### [7. Traffic Management: Elastic Load Balancing & CloudFront](./07_Traffic_Management.md) (10 minutes)
 *   **Title:** "Traffic & Content Delivery Administration"
 *   **Objective:** To distribute traffic for scalability and reliability, and to accelerate content delivery.
 *   **Administrative Tasks (ELB):**
@@ -59,7 +67,14 @@
     *   **Origins:** Configuring origins, such as an S3 bucket for static assets or a load balancer for dynamic content.
     *   **Cache Policies:** Understanding cache behavior and Time-To-Live (TTL) settings.
 
-### [7. Summary & Next Steps](./07_Summary_and_Next_Steps.md) (10 minutes)
+### [8. DNS Management with Route 53](./08_DNS_Management_with_Route53.md) (10 minutes)
+*   **Title:** "DNS Management with Route 53"
+*   **Objective:** To point a custom domain name to the application using Route 53.
+*   **Administrative Tasks:**
+    *   Creating a Public Hosted Zone.
+    *   Creating an Alias record to point to a CloudFront distribution or Load Balancer.
+
+### [9. Summary & Next Steps](./09_Summary_and_Next_Steps.md) (10 minutes)
 *   **Title:** "Operationalizing Your AWS Environment"
 *   **Review:** Briefly recap how the services connect to achieve high availability.
 *   **Next Steps:** Introduce subsequent topics for deeper dives:
@@ -68,5 +83,5 @@
     *   Monitoring and logging with CloudWatch.
 *   **Q&A.**
 
-### [8. Recommended AWS Educate Courses](./08_AWS_Educate_Courses.md)
+### [10. Recommended AWS Educate Courses](./10_AWS_Educate_Courses.md)
 *   A list of supplementary, hands-on courses from AWS Educate to reinforce the concepts in this guide.

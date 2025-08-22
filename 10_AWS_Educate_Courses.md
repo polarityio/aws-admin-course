@@ -28,11 +28,11 @@ The following courses map directly to the chapters in this guide and are highly 
 
 **4. Getting Started with Storage**
 *   **Description:** This course introduces cloud storage solutions and provides hands-on experience with Amazon Simple Storage Service (S3) for storing and retrieving data.
-*   **Relevant Chapter:** [5. Scalable Object Storage: S3 Bucket Administration](./05_S3_Bucket_Administration.md)
+*   **Relevant Chapter:** [6. Scalable Object Storage: S3 Bucket Administration](./06_S3_Bucket_Administration.md)
 
 **5. Getting Started with Security**
 *   **Description:** This foundational course covers essential cloud security concepts. A primary focus is on AWS Identity and Access Management (IAM), where you will learn to configure users, groups, and roles to securely grant access to AWS resources.
-*   **Relevant Chapter:** [7. Summary & Next Steps](./07_Summary_and_Next_Steps.md) (Relates to the IAM section).
+*   **Relevant Chapter:** [9. Summary & Next Steps](./09_Summary_and_Next_Steps.md) (Relates to the IAM section).
 
 ---
 
