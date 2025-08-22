@@ -32,7 +32,15 @@
     *   **Key Pair Management:** Creating and managing SSH keys for secure administrative access.
     *   **Bootstrapping:** Using "User Data" scripts to automate initial server configuration on launch.
 
-### [4. Scalable Object Storage: S3 Bucket Administration](./04_S3_Bucket_Administration.md) (5 minutes)
+### [4. IAM for Resource Access: Granting Permissions with Roles](./04_IAM_for_Resource_Access.md) (10 minutes)
+*   **Title:** "IAM for Resource Access: Granting Permissions with Roles"
+*   **Objective:** To understand and implement the secure way for AWS resources to interact with each other.
+*   **Administrative Tasks:**
+    *   Creating IAM Policies with specific permissions.
+    *   Creating IAM Roles for the EC2 service.
+    *   Attaching Roles to EC2 instances via an Instance Profile.
+
+### [5. Scalable Object Storage: S3 Bucket Administration](./05_S3_Bucket_Administration.md) (5 minutes)
 *   **Title:** "S3 Administration: Managing Application Assets"
 *   **Objective:** To configure durable, scalable, and secure storage for application assets, logs, and backups.
 *   **Administrative Tasks:**
@@ -40,7 +48,7 @@
     *   **Access Control:** Managing Block Public Access settings and introduction to bucket policies.
     *   **Storage Classes:** Understanding the use cases for different storage tiers (e.g., S3 Standard vs. Glacier).
 
-### [5. Traffic Management: Elastic Load Balancing & CloudFront](./05_Traffic_Management.md) (10 minutes)
+### [6. Traffic Management: Elastic Load Balancing & CloudFront](./06_Traffic_Management.md) (10 minutes)
 *   **Title:** "Traffic & Content Delivery Administration"
 *   **Objective:** To distribute traffic for scalability and reliability, and to accelerate content delivery.
 *   **Administrative Tasks (ELB):**
@@ -51,7 +59,7 @@
     *   **Origins:** Configuring origins, such as an S3 bucket for static assets or a load balancer for dynamic content.
     *   **Cache Policies:** Understanding cache behavior and Time-To-Live (TTL) settings.
 
-### [6. Summary & Next Steps](./06_Summary_and_Next_Steps.md) (10 minutes)
+### [7. Summary & Next Steps](./07_Summary_and_Next_Steps.md) (10 minutes)
 *   **Title:** "Operationalizing Your AWS Environment"
 *   **Review:** Briefly recap how the services connect to achieve high availability.
 *   **Next Steps:** Introduce subsequent topics for deeper dives:
@@ -59,3 +67,6 @@
     *   Automating deployments with Infrastructure as Code (e.g., CloudFormation or Terraform).
     *   Monitoring and logging with CloudWatch.
 *   **Q&A.**
+
+### [8. Recommended AWS Educate Courses](./08_AWS_Educate_Courses.md)
+*   A list of supplementary, hands-on courses from AWS Educate to reinforce the concepts in this guide.

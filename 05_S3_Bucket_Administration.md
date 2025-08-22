@@ -34,7 +34,7 @@ By default, all S3 buckets and the objects within them are **private**. Only the
 ### Block Public Access
 This is a set of security controls at the account and bucket level that helps you ensure your data is never exposed to the public internet unless you explicitly intend it to be. The default setting is to **block all public access**, and it is highly recommended to leave this enabled. [Learn more about Blocking Public Access here](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-control-block-public-access.html).
 
-Our application's EC2 instances will access the bucket's content using IAM Roles (covered in a later chapter), not via public access. Our users will access specific assets via CloudFront, which will be granted special permission to retrieve content from our private S3 bucket.
+Our application's EC2 instances will access the bucket's content using IAM Roles (covered in detail in the [IAM for Resource Access](./04_IAM_for_Resource_Access.md) chapter), not via public access. Our users will access specific assets via CloudFront, which will be granted special permission to retrieve content from our private S3 bucket.
 
 ### Bucket Policies
 [Bucket policies](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html) are JSON-based documents that give you fine-grained control over access to your S3 bucket. You can specify who can access the bucket, which actions they can perform (e.g., `s3:GetObject`, `s3:PutObject`), and from where (e.g., only from a specific IP address or VPC).
